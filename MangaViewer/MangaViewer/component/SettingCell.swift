@@ -8,6 +8,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import UIKit
 
@@ -70,6 +71,9 @@ class SettingCell: BaseCell {
 
 
 
+=======
+import Foundation
+>>>>>>> 0f68a73e4f9a081f834b5fd4413b38b7e3e6098a
 =======
 import Foundation
 >>>>>>> 0f68a73e4f9a081f834b5fd4413b38b7e3e6098a

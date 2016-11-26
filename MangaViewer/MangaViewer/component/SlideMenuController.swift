@@ -9,6 +9,7 @@
 import Foundation
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 //
 //  SlideMenuController.swift
@@ -1081,6 +1082,8 @@ extension UIViewController {
         }
     }
 }
+=======
+>>>>>>> 0f68a73e4f9a081f834b5fd4413b38b7e3e6098a
 =======
 >>>>>>> 0f68a73e4f9a081f834b5fd4413b38b7e3e6098a
 =======

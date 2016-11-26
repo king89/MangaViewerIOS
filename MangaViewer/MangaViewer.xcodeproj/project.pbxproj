@@ -15,12 +15,14 @@
 		3C5324B51DAD7AAD0012C611 /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5324B41DAD7AAD0012C611 /* BaseItem.swift */; };
 		3C5324B91DAD85490012C611 /* MangaMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5324B81DAD85490012C611 /* MangaMenuItem.swift */; };
 		3C5324BC1DAD88EC0012C611 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5324BB1DAD88EC0012C611 /* Extensions.swift */; };
-		3C5324BF1DADA9530012C611 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5324BE1DADA9530012C611 /* MenuBar.swift */; };
 		3C5324C11DADDBB70012C611 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5324C01DADDBB70012C611 /* XLPagerTabStrip.framework */; };
 		3CF526171DAF3ED10062306A /* ChildExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF526161DAF3ED10062306A /* ChildExampleViewController.swift */; };
 		3CF526191DC2D9210062306A /* LatestMangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF526181DC2D9210062306A /* LatestMangaViewController.swift */; };
 		3CF5261B1DC2E2F10062306A /* MangaMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5261A1DC2E2F10062306A /* MangaMenuItemCell.swift */; };
 		3CF5261D1DC2E3E00062306A /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5261C1DC2E3E00062306A /* BaseCell.swift */; };
+		3CF526211DCBC4DF0062306A /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF526201DCBC4DF0062306A /* SlideMenuController.swift */; };
+		3CF526231DCBC53E0062306A /* MenuDrawerViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF526221DCBC53E0062306A /* MenuDrawerViewControll.swift */; };
+		3CF526251DD5058B0062306A /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF526241DD5058B0062306A /* SettingCell.swift */; };
 		E37EF90A1C718F45A5C93AED /* Pods_MangaViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDFEC6554429E19FFBB1252 /* Pods_MangaViewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,12 +38,14 @@
 		3C5324B41DAD7AAD0012C611 /* BaseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseItem.swift; sourceTree = "<group>"; };
 		3C5324B81DAD85490012C611 /* MangaMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MangaMenuItem.swift; sourceTree = "<group>"; };
 		3C5324BB1DAD88EC0012C611 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		3C5324BE1DADA9530012C611 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		3C5324C01DADDBB70012C611 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MangaViewer-heccelbuctkhtcbbginpftpjwuvw/Build/Products/Debug-iphonesimulator/XLPagerTabStrip/XLPagerTabStrip.framework"; sourceTree = "<group>"; };
 		3CF526161DAF3ED10062306A /* ChildExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildExampleViewController.swift; sourceTree = "<group>"; };
 		3CF526181DC2D9210062306A /* LatestMangaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestMangaViewController.swift; sourceTree = "<group>"; };
 		3CF5261A1DC2E2F10062306A /* MangaMenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MangaMenuItemCell.swift; sourceTree = "<group>"; };
 		3CF5261C1DC2E3E00062306A /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		3CF526201DCBC4DF0062306A /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		3CF526221DCBC53E0062306A /* MenuDrawerViewControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDrawerViewControll.swift; sourceTree = "<group>"; };
+		3CF526241DD5058B0062306A /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		5C36A5774E975D60BBDA6AFE /* Pods-MangaViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangaViewer/Pods-MangaViewer.release.xcconfig"; sourceTree = "<group>"; };
 		DCDFEC6554429E19FFBB1252 /* Pods_MangaViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,6 +145,7 @@
 				3CF526161DAF3ED10062306A /* ChildExampleViewController.swift */,
 				3C1366BB1D9B64A300D11165 /* HomeViewController.swift */,
 				3CF526181DC2D9210062306A /* LatestMangaViewController.swift */,
+				3CF526221DCBC53E0062306A /* MenuDrawerViewControll.swift */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -158,7 +163,8 @@
 			children = (
 				3CF5261C1DC2E3E00062306A /* BaseCell.swift */,
 				3CF5261A1DC2E2F10062306A /* MangaMenuItemCell.swift */,
-				3C5324BE1DADA9530012C611 /* MenuBar.swift */,
+				3CF526201DCBC4DF0062306A /* SlideMenuController.swift */,
+				3CF526241DD5058B0062306A /* SettingCell.swift */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -296,10 +302,12 @@
 			files = (
 				3C5324BC1DAD88EC0012C611 /* Extensions.swift in Sources */,
 				3C1366BC1D9B64A300D11165 /* HomeViewController.swift in Sources */,
+				3CF526251DD5058B0062306A /* SettingCell.swift in Sources */,
 				3CF526191DC2D9210062306A /* LatestMangaViewController.swift in Sources */,
+				3CF526231DCBC53E0062306A /* MenuDrawerViewControll.swift in Sources */,
 				3CF526171DAF3ED10062306A /* ChildExampleViewController.swift in Sources */,
-				3C5324BF1DADA9530012C611 /* MenuBar.swift in Sources */,
 				3C5324B51DAD7AAD0012C611 /* BaseItem.swift in Sources */,
+				3CF526211DCBC4DF0062306A /* SlideMenuController.swift in Sources */,
 				3C5324B91DAD85490012C611 /* MangaMenuItem.swift in Sources */,
 				3CF5261B1DC2E2F10062306A /* MangaMenuItemCell.swift in Sources */,
 				3CF5261D1DC2E3E00062306A /* BaseCell.swift in Sources */,
@@ -419,6 +427,10 @@
 			baseConfigurationReference = 2CCC04F7233D250D569D4CBA /* Pods-MangaViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SlideMenuControllerSwift",
+				);
 				INFOPLIST_FILE = MangaViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.king.MangaViewer;
@@ -431,6 +443,10 @@
 			baseConfigurationReference = 5C36A5774E975D60BBDA6AFE /* Pods-MangaViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SlideMenuControllerSwift",
+				);
 				INFOPLIST_FILE = MangaViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.king.MangaViewer;

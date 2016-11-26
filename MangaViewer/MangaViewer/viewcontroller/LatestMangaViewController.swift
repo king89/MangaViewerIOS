@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import XLPagerTabStrip
 
-class LatestMangaViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class LatestMangaViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate {
     let cellId = "cellId"
     
     override func viewDidLoad() {
@@ -28,7 +28,16 @@ class LatestMangaViewController: UIViewController, IndicatorInfoProvider, UIColl
         mangaSourceView.heightAnchor.constraintEqualToConstant(20).active = true
         mangaSourceView.widthAnchor.constraintEqualToConstant(self.view.frame.width).active = true
         
+        let tap = UIScreenEdgePanGestureRecognizer(target: self, action: Selector("handleTap:"))
+        tap.edges = .Left
+        //tap.cancelsTouchesInView = false
+        tap.delegate = self
+        self.view.addGestureRecognizer(tap)
         
+    }
+    func handleTap(sender: UIScreenEdgePanGestureRecognizer? = nil) {
+        // handling code
+        print("handle tag")
     }
     func indicatorInfoForPagerTabStrip(pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "Latest Releases")

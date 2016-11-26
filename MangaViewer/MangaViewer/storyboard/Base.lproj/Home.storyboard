@@ -17,17 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="POp-5v-1xb" appends="YES" id="SrY-5h-eos"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="SfV-8s-YeN">
                         <barButtonItem key="leftBarButtonItem" image="ic_drawer" width="300" style="plain" id="KzI-b1-hNR">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="Gtm-3d-Qda" kind="push" id="qZh-4h-aOD"/>
+                                <action selector="menuDrawerClicked:" destination="BYZ-38-t0r" id="ZBE-P0-aK7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="POp-5v-1xb">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="swipDrawer:" destination="BYZ-38-t0r" id="iAl-se-DQD"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="561.06666666666661" y="316.18666666666667"/>
         </scene>

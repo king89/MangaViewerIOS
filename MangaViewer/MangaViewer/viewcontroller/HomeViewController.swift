@@ -9,8 +9,9 @@
 import UIKit
 import XLPagerTabStrip
 
-class HomeViewController: ButtonBarPagerTabStripViewController {
-
+class HomeViewController: ButtonBarPagerTabStripViewController, UIGestureRecognizerDelegate {
+    
+    
     override func viewDidLoad() {
         settings.style.buttonBarBackgroundColor = UIColor.primaryColor()
         settings.style.buttonBarItemBackgroundColor = UIColor.clearColor()
@@ -39,14 +40,40 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
             oldCell?.label.textColor = UIColor.grayColor()
             newCell?.label.textColor = UIColor.whiteColor()
         }
+        
+        let tap = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(swipDrawer))
+        tap.edges = .Left
+        tap.delegate = self
+        self.view.addGestureRecognizer(tap)
+        
+    }
     
+    @IBAction func swipDrawer(sender: AnyObject) {
+        handleMore()
+        print("edge pan gesture" )
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    lazy var settingsLauncher: MenuDrawerViewController = {
+        let launcher = MenuDrawerViewController()
+        launcher.homeController = self
+        return launcher
+    }()
+    
+    @IBAction func menuDrawerClicked(sender: AnyObject) {
+        handleMore()
     }
-
+    
+    func handleMore() {
+        //show menu
+        settingsLauncher.showSettings()
+    }
+    
+    lazy var menuView:UIView = {
+        let v = UIView()
+        
+        v.backgroundColor = .blackColor()
+        return v
+    }();
     override func viewControllersForPagerTabStrip(pagerTabStripController: PagerTabStripViewController) -> [UIViewController]{
         var vcList = [UIViewController]()
         vcList.append(LatestMangaViewController())
@@ -56,6 +83,8 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         }
         return vcList
     }
-
+    
+    
+    
 }
 
